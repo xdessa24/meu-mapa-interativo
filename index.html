@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mapa Interativo</title>
+  <style>
+    svg {
+      width: 100%;
+      height: auto;
+    }
+    path {
+      fill: #b0b0b0 !important;
+      stroke: #ffffff !important;
+      stroke-width: 0.3;
+      transition: fill 0.3s ease;
+    }
+    @keyframes blink {
+      0%   { fill: #d98181 !important; }
+      50%  { fill: #b0b0b0 !important; }
+      100% { fill: #d98181 !important; }
+    }
+    .blink {
+      animation: blink 1.5s infinite !important;
+    }
+  </style>
+</head>
+<body>
+  <svg viewBox="0 0 2000 1001" xmlns="http://www.w3.org/2000/svg">
+<path class="blink" d="M100,600 L140,600 L140,640 L100,640 Z" id="BR"/>
+<path class="blink" d="M100,300 L140,300 L140,340 L100,340 Z" id="US"/>
+<path class="blink" d="M100,200 L140,200 L140,240 L100,240 Z" id="CA"/>
+<path class="blink" d="M900,300 L940,300 L940,340 L900,340 Z" id="DE"/>
+<path class="blink" d="M880,340 L920,340 L920,380 L880,380 Z" id="ES"/>
+<path class="blink" d="M890,320 L930,320 L930,360 L890,360 Z" id="FR"/>
+<path class="blink" d="M920,350 L960,350 L960,390 L920,390 Z" id="IT"/>
+<path class="blink" d="M860,280 L900,280 L900,320 L860,320 Z" id="GB"/>
+<path class="blink" d="M150,800 L190,800 L190,840 L150,840 Z" id="AR"/>
+<path class="blink" d="M130,800 L150,800 L150,840 L130,840 Z" id="CL"/>
+<path class="blink" d="M130,500 L170,500 L170,540 L130,540 Z" id="CO"/>
+<path class="blink" d="M80,380 L120,380 L120,420 L80,420 Z" id="MX"/>
+<path class="blink" d="M1300,400 L1340,400 L1340,440 L1300,440 Z" id="CN"/>
+<path class="blink" d="M1450,420 L1470,420 L1470,440 L1450,440 Z" id="JP"/>
+<path class="blink" d="M1200,500 L1240,500 L1240,540 L1200,540 Z" id="IN"/>
+</svg>
+</body>
+</html>
